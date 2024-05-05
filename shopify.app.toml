@@ -1,0 +1,23 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "vivasoft-popup"
+client_id = "f376625ebfebab6d810ed5570b98b6e2"
+application_url = "http://192.168.10.152:3000/"
+embedded = false
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products,read_themes,write_themes"
+
+[auth]
+redirect_urls = [
+  "http://192.168.9.65:4000/api/shopify/redirect",
+  "https://1da3-175-29-198-242.ngrok-free.app"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[build]
+automatically_update_urls_on_dev = false
+dev_store_url = "fusionfirm.myshopify.com"

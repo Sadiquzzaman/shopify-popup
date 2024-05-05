@@ -1,0 +1,27 @@
+{
+  "name": "vivasoft-popup",
+  "version": "1.0.0",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.504.0",
+    "@aws-sdk/s3-request-presigner": "^3.504.0",
+    "@shopify/app": "3.52.0",
+    "@shopify/cli": "3.52.0"
+  },
+  "author": "shovon",
+  "private": true,
+  "workspaces": [
+    "extensions/*",
+    "web",
+    "web/frontend"
+  ]
+}
